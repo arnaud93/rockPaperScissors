@@ -5,3 +5,24 @@ For this project, we will create a game Rock Paper Scissors. This game will be p
 
 Let's have fun!
 
+Steps for the creation of the game: 
+
+1- Write a function that randomly returns “rock”, “paper” or “scissors”
+
+2- Write a function that takes the user choice and returns it.
+
+3- Write variables to keep track of the players score.
+
+4- Write a function that:
+    - takes the human and computer player choices as arguments
+    - plays a single round
+    - increments the round winner’s score
+    - logs a winner announcement
+
+5- Write a function named playGame that:
+    - calls playRound to play 5 rounds
+    - Keeps track of the scores 
+    - Declares a winner at the end.
+
+
+
