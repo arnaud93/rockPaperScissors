@@ -8,6 +8,9 @@ Let's have fun!
 Steps for the creation of the game: 
 
 1- Write a function that randomly returns “rock”, “paper” or “scissors”
+    - Create an array of words
+    - Write a function that randomly selects one of these words
+    - Ensure the function returns the selected words
 
 2- Write a function that takes the user choice and returns it.
 
