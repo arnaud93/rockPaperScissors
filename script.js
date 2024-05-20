@@ -1,4 +1,11 @@
+
+
+/*write code below this line*/
+
+
 const words = ["rock", "paper", "scissors"];
+
+/*code for computer choice */ 
 
 function getComputerChoice(wordArray) {
     let currentIndex = wordArray.length; 
@@ -7,5 +14,7 @@ function getComputerChoice(wordArray) {
         return wordArray[randomIndex];
     } 
 }
+
+/*code for the human choice */
 
 
