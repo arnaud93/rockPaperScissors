@@ -27,3 +27,12 @@ function getHumanChoice(choice) {
 
 // Test the function
 console.log("You chose:", getHumanChoice(userChoice));
+
+
+//Create variables humanScore and computerScore
+//Give them initial values of 0
+var humanScore = 0;
+var computerScore = 0;
+
+
+
