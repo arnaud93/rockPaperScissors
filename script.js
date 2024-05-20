@@ -15,6 +15,15 @@ function getComputerChoice(wordArray) {
     } 
 }
 
-/*code for the human choice */
+// prompt the user for their choice
 
 
+let userChoice = prompt("What's your choice? (rock, paper or scissors)");
+
+// Function to return the user's choice
+function getHumanChoice(choice) {
+    return choice;
+}
+
+// Test the function
+console.log("You chose:", getHumanChoice(userChoice));
