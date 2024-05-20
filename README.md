@@ -13,6 +13,9 @@ Steps for the creation of the game:
     - Ensure the function returns the selected words
 
 2- Write a function that takes the user choice and returns it.
+    - Create a new function named getHumanChoice
+    - Write the code so that the function returns one of the valid choices
+    - Test the function
 
 3- Write variables to keep track of the players score.
 
