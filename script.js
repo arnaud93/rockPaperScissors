@@ -34,5 +34,8 @@ console.log("You chose:", getHumanChoice(userChoice));
 var humanScore = 0;
 var computerScore = 0;
 
-
-
+//Create a new function named playRound
+//Define parameters for playRound
+function playRound(humanChoice, computerChoice) {
+    let humanChoice = choice.toLowerCase();
+}
