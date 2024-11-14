@@ -29,12 +29,22 @@ console.log(getComputerChoice());
       
 
 // prompt the user for their choice
+function getHumanChoice() {
 
-let humanChoice = prompt("What's your choice");
+    const validChoices = ["rock", "paper", "scissors"];
+    let userInput = prompt("Enter your choice (rock, paper, scissors):").toLowerCase().trim();
+    
+    if (validChoices.includes(userInput)) {
+        return userInput;
+    } else {
+        prompt("Invalid choice. Please enter rock, paper or scissors");
+        return getHumanChoice();
+    }
 
 
-// Function to return the user's choice
+}
 
+console.log("You chose:", getHumanChoice());
 
 
 // Test the function
