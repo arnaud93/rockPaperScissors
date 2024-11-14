@@ -26,14 +26,11 @@ function getComputerChoice() {
       
 console.log(getComputerChoice());
 
-
-// Expected output: 0, 1 or 2
       
 
-/*
 // prompt the user for their choice
 
-
+let humanChoice = prompt("What's your choice");
 
 
 // Function to return the user's choice
@@ -52,4 +49,3 @@ console.log(getComputerChoice());
 //Create a new function named playRound
 //Define parameters for playRound
 
-*/
