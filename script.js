@@ -1,41 +1,55 @@
 
 
-/*write code below this line*/
+console.log("Hello World");
+
+// write code below this line
+
+// code for computer choice 
+/*
+function getComputerChoice(computerChoice) {
+    var computerChoice = ["rock", "paper", "scissors"];
+    let i = Math.floor(Math.random() * computerChoice.length);
+    let r = computerChoice[i];
+    console.log("Random word:", r);}*/
+
+function getComputerChoice() {
+    let randomNum = Math.random();
+    
+    if (randomNum < 0.33) {
+        return "rock";
+    } else if (randomNum < 0.66) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+    }
+      
+console.log(getComputerChoice());
 
 
-const words = ["rock", "paper", "scissors"];
+// Expected output: 0, 1 or 2
+      
 
-/*code for computer choice */ 
-
-function getComputerChoice(wordArray) {
-    let currentIndex = wordArray.length; 
-    while (currentIndex != 0) {
-        let randomIndex = Math.floor(Math.random() * wordArray.length);
-        return wordArray[randomIndex];
-    } 
-}
-
+/*
 // prompt the user for their choice
 
 
-let userChoice = prompt("What's your choice? (rock, paper or scissors)");
+
 
 // Function to return the user's choice
-function getHumanChoice(choice) {
-    return choice;
-}
+
+
 
 // Test the function
-console.log("You chose:", getHumanChoice(userChoice));
+
 
 
 //Create variables humanScore and computerScore
 //Give them initial values of 0
-var humanScore = 0;
-var computerScore = 0;
+
+
 
 //Create a new function named playRound
 //Define parameters for playRound
-function playRound(humanChoice, computerChoice) {
-    let humanChoice = choice.toLowerCase();
-}
+
+*/
