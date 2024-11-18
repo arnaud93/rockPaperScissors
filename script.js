@@ -47,15 +47,30 @@ function getHumanChoice() {
 console.log("You chose:", getHumanChoice());
 
 
-// Test the function
-
-
-
 //Create variables humanScore and computerScore
 //Give them initial values of 0
-
-
+var humanScore = 0;
+var computerScore = 0;
 
 //Create a new function named playRound
 //Define parameters for playRound
 
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === computerChoice) {
+        console.log("It's a tie!");
+    }  else if (
+        humanChoice === "rock" && computerChoice === "scissors" || 
+        humanChoice === "paper" && computerChoice === "rock" ||
+        humanChoice === "scissors" && computerChoice === "paper")
+    {   
+        console.log('You win! ${humanChoice} beats ${computerChoice}');
+        humanScore++;
+    }
+      else {
+        console.log('You lose ! ${computerChoice} beats ${humanChoice}');
+        computerScore++;
+      }
+
+ 
+
+console.log("")
