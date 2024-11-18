@@ -79,10 +79,28 @@ playRound(humanChoice, computerChoice);
 //playGame declares winner at the end
 
 function playGame(){
-    let humanScore = 0;
-    let computerScore = 0;
+    for (let i = 1; i <= 5; i++) {
+        console.log(`Round ${i}:`);
 
-    for (let i = 0; i < 5; i++) {
-        const humanChoice
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+
+        console.log("You chose: ", humanChoice);
+        console.log("Computer chose: ", computerChoice);
+
+        playRound(humanChoice, computerChoice);
+
+        console.log(`Scores after Round ${i} - Human: ${humanScore}, Computer: ${computerScore}`);
     }
+
+    if (humanScore > computerScore) {
+        console.log("Congratulations, you win this game!");
+        } else if (humanScore < computerScore) {
+            console.log("Too bad, better luck next time!");
+        } else {
+            console.log("It's a tie, everyone is a winner this round!")
+        }
 }
+
+
+playGame();
