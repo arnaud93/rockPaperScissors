@@ -23,10 +23,7 @@ function getComputerChoice() {
         return "scissors";
     }
     }
-      
-console.log(getComputerChoice());
-
-      
+          
 
 // prompt the user for their choice
 function getHumanChoice() {
@@ -37,14 +34,12 @@ function getHumanChoice() {
     if (validChoices.includes(userInput)) {
         return userInput;
     } else {
-        prompt("Invalid choice. Please enter rock, paper or scissors");
+         alert("Invalid choice. Please enter rock, paper or scissors");
         return getHumanChoice();
     }
 
 
 }
-
-console.log("You chose:", getHumanChoice());
 
 
 //Create variables humanScore and computerScore
@@ -62,15 +57,32 @@ function playRound(humanChoice, computerChoice) {
         humanChoice === "rock" && computerChoice === "scissors" || 
         humanChoice === "paper" && computerChoice === "rock" ||
         humanChoice === "scissors" && computerChoice === "paper")
-    {   
-        console.log('You win! ${humanChoice} beats ${computerChoice}');
+        {   
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
         humanScore++;
     }
       else {
-        console.log('You lose ! ${computerChoice} beats ${humanChoice}');
+        console.log(`You lose ! ${computerChoice} beats ${humanChoice}`);
         computerScore++;
-      }
+      }}
+
+//Call functions to run a single round
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
+console.log("You chose: ", humanChoice);
+console.log("Computer chose: ", computerChoice);
+playRound(humanChoice, computerChoice);
 
  
+//Create function playGame
+//playGame calls playRound to play 5 rounds, keeps track of scores
+//playGame declares winner at the end
 
-console.log("")
+function playGame(){
+    let humanScore = 0;
+    let computerScore = 0;
+
+    for (let i = 0; i < 5; i++) {
+        const humanChoice
+    }
+}
